@@ -1,20 +1,20 @@
-# twitter/template
+# Double Corrected Variance Estimator
 
-[![Project Status: WIP](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostatus.org/#wip)
+[![status: static](https://opensource.twitter.dev/status/static.svg)](https://opensource.twitter.dev/status/#static)
 
-**TODO(new project):** Review this entire file and update it to reflect your
-project. Feel free to add or remove sections as appropriate, and get ideas from
-[Awesome README](https://github.com/matiassingers/awesome-readme).
+This is a repo for the code used for reproducing our [De-biasing "bias" measurement paper]() (will add link when it's out). 
 
-Include a short description of the project.
+If you plan to use this code please cite our paper as follows:
 
-## Support
+```
+@ARTICLE{debiasing-bias-measurement,
+       author = {Lum, Kristian and Zhang, Yunfeng and Bower, Amanda},
+        title = {De-biasing "bias" measurement},
+         year = 2022
+}
+```
 
-Create a [new issue](https://github.com/twitter/template/issues/new/choose) or
-[join a discussion](https://github.com/twitter/template/discussions).
-
-## Contributing
-
-We welcome contributions of all kinds! See our [contributing
-guide](CONTRIBUTING.md) as well as Twitter's [Open Source Code of
-Conduct](https://github.com/twitter/.github/blob/master/code-of-conduct.md).
+# Instructions
+- clone the repo.
+- Run `RScript bootstrap_variance_estimates_fast.R` to reproduce the results in the paper.
+- Run `adult income.ipynb` to reproduce the results in Section 6.
